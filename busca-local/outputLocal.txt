@@ -1,0 +1,16 @@
+n: 30
+m: 50
+
+DNA-A: -AGGAGGAG-CA--CCCATG--A-CA---T
+DNA-B: -ACAA-CTAGGCTAGAAGG-T-CAT-TT-T-TT-TAT--TA-GCATTG--
+
+Sequences:
+	A: -AGGAGGAG-CA--
+	B: TAGAAGG-T-CAT-
+	Score: 13
+---------------------------------
+Sequences:
+	A: -AGGAGGAG-CA--
+	B: TAGAAGG-T-CAT-
+	Score: 13
+---------------------------------

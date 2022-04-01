@@ -43,6 +43,7 @@ int match(char a, char b)
     }
 }
 
+
 int main(){
     string dnaA,dnaB;
     int n,m;
