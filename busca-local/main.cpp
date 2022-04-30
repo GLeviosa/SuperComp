@@ -64,7 +64,11 @@ int main(){
     file << "DNA-A: " << a << endl;
     file << "DNA-B: " << b << endl;
     file << endl;
-
+    if (n > m)
+    {
+        a.swap(b);
+        swap(n,m);
+    }
     random_device seeed;
     uniform_int_distribution<int> distP(1, n+m);
     p = distP(seeed);
@@ -76,14 +80,14 @@ int main(){
                     };
                     
     int max_score = -std::max(n,m);
-    for (int l = 0; l < 100; l++)
+    for (int l = 0; l < 1; l++)
     {   
         uniform_int_distribution<int> distK(1, n);
         k = distK(seeed);
-        // cout<< "k: " << k << endl;
+        cout<< "k: " << k << endl;
         uniform_int_distribution<int> distJ(0, m-k);
         j = distJ(seeed);
-        // cout<< "j: " << j << endl;
+        cout<< "j: " << j << endl;
 
         sb = b.substr(j, k);
         p = n-k+1;
