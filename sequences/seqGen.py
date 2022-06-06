@@ -1,12 +1,12 @@
 import random
 
-max_sequence_length = 300
+max_sequence_length = 2000
 filename = 0
 
-for n in range(20, max_sequence_length + 1, 20):
-  for m in range(20, max_sequence_length + 1, 20):
+for n in range(25, max_sequence_length + 1, 400):
+  for m in range(25, max_sequence_length + 1, 400):
 
-    file = f"./all/dna{filename}.seq"
+    file = f"./test2/dna{filename}.seq"
     f = open(file, 'w')
     seq=[str(n)+'\n',
         str(m)+'\n',

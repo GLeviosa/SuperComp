@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "json_generator.py", line 45, in <module>
+    dicExaus = getInfo(dic["exaus"], dic["inputAll"])
+  File "json_generator.py", line 35, in getInfo
+    dic_temp["times"].append(runWithInput(algorithm, f"{path}/{file}"))
+  File "json_generator.py", line 22, in runWithInput
+    proc = subprocess.run([exe], input=file.read(),text=True, capture_output=True)
+  File "/usr/lib/python3.8/subprocess.py", line 495, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1028, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1868, in _communicate
+    ready = selector.select(timeout)
+  File "/usr/lib/python3.8/selectors.py", line 415, in select
+    fd_event_list = self._selector.poll(timeout)
+KeyboardInterrupt
+smith foi
+local foi
+exaustiva foi
