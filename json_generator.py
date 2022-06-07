@@ -8,7 +8,7 @@ import json
 
 dic = {
     "inputAll"      : "./sequences/all",
-    "inputParallel" : "./sequences/test2",
+    "inputParallel" : "./sequences/exaus",
     "smith"         : "./smith-waterman/main",
     "local"         : "./busca-local/main",
     "exaus"         : "./busca-exaustiva/main",
@@ -42,13 +42,12 @@ def getInfo(algorithm, path):
 
 # dicSmith = getInfo(dic["smith"], dic["inputAll"])
 # print("smith foi")
-# dicLocal = getInfo(dic["local"], dic["inputAll"])
+# dicLocal = getInfo(dic["local"], dic["inputParallel"])
 # print("local foi")
-# dicExaus = getInfo(dic["exaus"], dic["inputAll"])
+dicExaus = getInfo(dic["exaus"], dic["inputParallel"])
 # print("exaustiva foi")
-# dicParLocal = getInfo(dic["localParallel"], dic["inputAll"])
+# dicParLocal = getInfo(dic["localParallel"], dic["inputParallel"])
 # print("Aqui foi!")
-dicParGPU = getInfo(dic["gpuParallel"], dic["inputParallel"])
 
 # dicResult = {"Smith"    : dicSmith,
 #              "Local"    : dicLocal,
@@ -56,7 +55,8 @@ dicParGPU = getInfo(dic["gpuParallel"], dic["inputParallel"])
 # dicResult={             "ParLocal" : dicParLocal,
 #              "ParGPU"   : dicParGPU}
 
+
 import json
-with open('dataParGPU.json', 'w') as f:
-    json.dump(dicParGPU, f, indent=4)
+with open('datatest.json', 'w') as f:
+    json.dump(dicExaus, f, indent=4)
 
